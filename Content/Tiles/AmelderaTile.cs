@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 using Laugicality.Utilities;
 using ReLogic.Content;
 

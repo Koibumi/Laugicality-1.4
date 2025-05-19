@@ -3,7 +3,7 @@ using Laugicality.Content.Items.Placeable;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 using Terraria.ID;
 
 namespace Laugicality.Content.Tiles

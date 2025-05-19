@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 using Laugicality.Utilities.Players;
 using Laugicality.Utilities;
-using WebmilioCommons.Helpers;
+using WebmilioCommonsAddon.Helpers;
 
 namespace Laugicality.Utilities.Focuses
 {

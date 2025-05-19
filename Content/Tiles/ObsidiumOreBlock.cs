@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 using Laugicality.Utilities;
 using System.Collections.Generic;
 

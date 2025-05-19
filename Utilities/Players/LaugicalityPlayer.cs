@@ -26,7 +26,7 @@ using Laugicality.Content.Projectiles.SoulStone;
 using Laugicality.Utilities;
 using Laugicality.Utilities.Extensions;
 using Terraria.WorldBuilding;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 using Laugicality.Content.Tiles;
 using Laugicality.Utilities.Globals;
 using BrassFAN = Laugicality.Content.Tiles.BrassFAN;

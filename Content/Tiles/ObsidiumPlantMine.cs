@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 
 namespace Laugicality.Content.Tiles
 {

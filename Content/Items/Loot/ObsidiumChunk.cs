@@ -5,8 +5,8 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Laugicality.Utilities.Base;
 using Terraria.GameContent.ItemDropRules;
-using WebmilioCommons.UI.Slots;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.UI.Slots;
+using WebmilioCommonsAddon.Extensions;
 
 namespace Laugicality.Content.Items.Loot
 {

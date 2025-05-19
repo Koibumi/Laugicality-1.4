@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 using Laugicality.Utilities;
 
 namespace Laugicality.Content.Tiles

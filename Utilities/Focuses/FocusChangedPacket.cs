@@ -3,7 +3,7 @@ using Terraria;
 using Laugicality.Utilities.Players;
 using Laugicality.Utilities;
 
-using WebmilioCommons.Packets;
+using WebmilioCommonsAddon.Packets;
 
 namespace Laugicality.Utilities.Focuses
 {

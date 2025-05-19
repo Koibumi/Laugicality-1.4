@@ -2,7 +2,7 @@
 using Laugicality.Utilities.Focuses;
 using Terraria;
 using Terraria.ID;
-using WebmilioCommons.Packets;
+using WebmilioCommonsAddon.Packets;
 using Laugicality.Utilities;
 
 namespace Laugicality.Utilities.Players

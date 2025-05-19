@@ -9,7 +9,7 @@ using System;
 using ReLogic.Graphics;
 using Laugicality.Utilities.Players;
 using Terraria.ModLoader;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 
 namespace Laugicality.Utilities.UI
 {

@@ -9,7 +9,7 @@ using Laugicality.Utilities;
 using Terraria.Audio;
 using Laugicality.Content.Items.Loot;
 using Terraria.GameContent.ItemDropRules;
-using WebmilioCommons.UI.Slots;
+using WebmilioCommonsAddon.UI.Slots;
 
 namespace Laugicality.Content.NPCs.Etheria
 {

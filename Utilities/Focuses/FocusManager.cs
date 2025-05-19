@@ -1,4 +1,4 @@
-﻿using WebmilioCommons.Helpers;
+﻿using WebmilioCommonsAddon.Helpers;
 using Laugicality.Utilities.Players;
 
 namespace Laugicality.Utilities.Focuses

@@ -3,7 +3,7 @@ using Laugicality.Content.Tiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
-using WebmilioCommons.Extensions;
+using WebmilioCommonsAddon.Extensions;
 
 namespace Laugicality.Utilities.Globals
 {

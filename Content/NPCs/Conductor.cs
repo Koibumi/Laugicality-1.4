@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Laugicality.Utilities;
 using Laugicality.Utilities.Players;
-using WebmilioCommons.UI.Slots;
+using WebmilioCommonsAddon.UI.Slots;
 
 
 namespace Laugicality.Content.NPCs

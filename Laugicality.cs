@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 using System.IO;
-using WebmilioCommons.Networking;
+using WebmilioCommonsAddon.Networking;
 using Laugicality.Utilities.UI;
 using Laugicality.Utilities.Etherial;
 
