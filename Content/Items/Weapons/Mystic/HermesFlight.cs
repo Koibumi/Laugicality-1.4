@@ -92,7 +92,7 @@ namespace Laugicality.Content.Items.Weapons.Mystic
 		{
 			Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Wood, 12);
-            recipe.AddRecipeGroup(16);
+            recipe.AddRecipeGroup(RecipeGroupID.IronBar);
             recipe.AddIngredient(ItemID.Feather, 4);
             recipe.AddIngredient(ItemID.FallenStar, 2);
             recipe.AddTile(16);

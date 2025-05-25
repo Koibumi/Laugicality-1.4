@@ -33,7 +33,6 @@ using BrassFAN = Laugicality.Content.Tiles.BrassFAN;
 using BrassFANRight = Laugicality.Content.Tiles.BrassFANRight;
 using BrassRING = Laugicality.Content.Tiles.BrassRING;
 using SteamVENT = Laugicality.Content.Tiles.SteamVENT;
-using CalamityMod.Items.Accessories;
 
 namespace Laugicality.Utilities.Players
 {

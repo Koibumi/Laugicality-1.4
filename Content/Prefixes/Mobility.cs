@@ -35,7 +35,6 @@ namespace Laugicality.Content.Prefixes
         {
             item.GetGlobalItem<GlobalSpeed>()._Speed = true;
         }
-
         public override IEnumerable<TooltipLine> GetTooltipLines(Item item)
         {
             string Tooltips1 = this.GetLocalization("Tooltips.Tooltips1").Value; 
@@ -46,9 +45,7 @@ namespace Laugicality.Content.Prefixes
                 IsModifier = true,
             };
         }
-
-        public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult,
-            ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
+        public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
             
         }

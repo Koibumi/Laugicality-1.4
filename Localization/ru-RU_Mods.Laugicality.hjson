@@ -33,6 +33,19 @@ Tiles: {
 	// CrystalineInfuser.MapEntry: Crystalline Infuser
 	// MineralEnchanterTile.MapEntry: Mineral Enchanter
 	// HighPriestess.MapEntry: High Priestess
+	// DuneSharkronMusicBox.MapEntry: Dune Sharkron Music Box
+	// AmelderaMusicBox.MapEntry: Ameldera Music Box
+	// AmelderaSurfaceMusicBox.MapEntry: Ameldera Surface Music Box
+	// AnDioMusicBox.MapEntry: An Dio Music Box
+	// AnnihilatorMusicBox.MapEntry: Annihilator Music Box
+	// DioritusMusicBox.MapEntry: Dioritus Music Box
+	// EtheriaMusicBox.MapEntry: Etheria Music Box
+	// GreatShadowMusicBox.MapEntry: Great Shadow Music Box
+	// HypothemaMusicBox.MapEntry: Hypothema Music Box
+	// ObsidiumMusicBox.MapEntry: Obsidium Music Box
+	// RagnarMusicBox.MapEntry: Ragnar Music Box
+	// SlybertronMusicBox.MapEntry: Slybertron Music Box
+	// SteamTrainMusicBox.MapEntry: Steam Train Music Box
 }
 
 Items: {
@@ -1347,7 +1360,11 @@ Items: {
 
 	ZaWarudoWatch: {
 		// DisplayName: The World
-		// Tooltip: ZA WARUDO!
+		/* Tooltip:
+			'''
+			ZA WARUDO!
+			use only when equipped [i:Laugicality/CoreOfAnDio]
+			''' */
 	}
 
 	AnnihilatorTreasureBag: {
@@ -3110,6 +3127,145 @@ Items: {
 		// DisplayName: Suspicious Steam Whistle
 		// Tooltip: Summons Steam Train
 	}
+
+	DuneSharkronMusicBox: {
+		// DisplayName: Music Box (Dune Sharkron)
+		// Tooltip: ""
+	}
+
+	AmelderaMusicBoxItem: {
+		// DisplayName: Music Box (Calm Obsidium)
+		// Tooltip: ""
+	}
+
+	AmelderaSurfaceMusicBoxItem: {
+		// DisplayName: Music Box (Calm Obsidium Surface)
+		// Tooltip: ""
+	}
+
+	AnDioMusicBox: {
+		// DisplayName: Music Box (AnDio)
+		// Tooltip: ""
+	}
+
+	AnnihilatorMusicBox: {
+		// DisplayName: Music Box (Annihilator)
+		// Tooltip: ""
+	}
+
+	DioritusMusicBox: {
+		// DisplayName: Music Box (Dioritus)
+		// Tooltip: ""
+	}
+
+	EtheriaMusicBox: {
+		// DisplayName: Music Box (Etheria)
+		// Tooltip: ""
+	}
+
+	GreatShadowMusicBox: {
+		// DisplayName: Music Box (Surface Obsidium)
+		// Tooltip: ""
+	}
+
+	HypothemaMusicBox: {
+		// DisplayName: Music Box (Hypothema)
+		// Tooltip: ""
+	}
+
+	ObsidiumMusicBox: {
+		// DisplayName: Music Box (Obsidium)
+		// Tooltip: ""
+	}
+
+	RagnarMusicBox: {
+		// DisplayName: Music Box (Ragnar)
+		// Tooltip: ""
+	}
+
+	SlybertronMusicBox: {
+		// DisplayName: Music Box (Slybertron)
+		// Tooltip: ""
+	}
+
+	SteamTrainMusicBox: {
+		// DisplayName: Music Box (Steam Train)
+		// Tooltip: ""
+	}
+
+	Antarctica: {
+		// Tooltip: ""
+		// DisplayName: Antarctica
+	}
+
+	AnDiuriken: {
+		// Tooltip: Stacks up to 4
+		// DisplayName: AnDiuriken
+	}
+
+	Andeshiard: {
+		/* Tooltip:
+			'''
+			'A blizzard hails from above'
+			When in the Etherial after defeating Etheria, rain down more Hail,
+			and stay stuck in enemies for twice as long.
+			''' */
+		// DisplayName: Andeshiard
+	}
+
+	ChakramOfTheViciousAssassin: {
+		// Tooltip: Surround and eliminate
+		// DisplayName: Chakram of The Vicious Assassin
+	}
+
+	BysmalRipper: {
+		/* Tooltip:
+			'''
+			'Tear through dimensions'
+			When in the Etherial after defeating Etheria, create an extra shadow on enemy hits.
+			''' */
+		// DisplayName: Bysmal Ripper
+	}
+
+	EnginatorT: {
+		// Tooltip: CHOO CHOO
+		// DisplayName: Enginator
+	}
+
+	Daggoritus: {
+		// Tooltip: ""
+		// DisplayName: Daggoritus
+	}
+
+	Coginator: {
+		// Tooltip: ""
+		// DisplayName: Coginator
+	}
+
+	JetDagger: {
+		// Tooltip: Return to sender
+		// DisplayName: Jet Dagger
+	}
+
+	ForbiddenAxe: {
+		// Tooltip: From the dunes
+		// DisplayName: Forgotten Axe
+	}
+
+	Eruptor: {
+		// Tooltip: For Fury
+		// DisplayName: Eruptor
+	}
+
+	TheSnowflake: {
+		// Tooltip: ""
+		// DisplayName: Snowflake
+	}
+
+	Obshardian: {
+		// Tooltip: ""
+		// DisplayName: Obshardian
+	}
 }
 
 ModRecipeSystem: {
@@ -3802,6 +3958,7 @@ Projectiles: {
 	// SandnadoUp.DisplayName: Sandnado Up
 	// SharkronCrystalShard.DisplayName: Sharkron Crystal Shard
 	// HailProj.DisplayName: Hail Proj
+	// Hail.DisplayName: Hail
 	// MiniRock.DisplayName: Mini Rock
 	// RockFalling.DisplayName: Rock Falling
 	// RockLooseMini.DisplayName: Rock Loose Mini
@@ -4003,6 +4160,21 @@ Projectiles: {
 	// TrueDawnSpark.DisplayName: True Dawn Spark
 	// ConductorProjectile.DisplayName: Conductor Projectile
 	// ShadowBurst.DisplayName: Shadow Burst
+	// AntarcticaProjectile.DisplayName: Antarctica Projectile
+	// AnDiurikenThrownProjectile.DisplayName: An Diuriken Thrown Projectile
+	// AndeshiardThrownProjectile.DisplayName: Andeshiard Thrown Projectile
+	// ViciousAssassinShard.DisplayName: Vicious Assassin Shard
+	// ViciousAssassinMain.DisplayName: Vicious Assassin Main
+	// BysmalRipperShadow.DisplayName: Bysmal Ripper Shadow
+	// BysmalRipperProjectile.DisplayName: Bysmal Ripper Projectile
+	// EnginatorTProj.DisplayName: Enginator T Proj
+	// DaggoritusProjectile.DisplayName: Daggoritus Projectile
+	// CoginatorP.DisplayName: Coginator P
+	// JetDaggerProjectile.DisplayName: Jet Dagger Projectile
+	// ForbiddenAxeProj.DisplayName: Forbidden Axe Proj
+	// EruptorProjectile.DisplayName: Eruptor Projectile
+	// TheSnowflakeProjectile.DisplayName: The Snowflake Projectile
+	// ObshardianP.DisplayName: Obshardian P
 }
 
 Biomes: {

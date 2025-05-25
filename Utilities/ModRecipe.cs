@@ -44,7 +44,7 @@ namespace Laugicality.Utilities
                 ItemID.WarriorEmblem,
                 ItemID.SorcererEmblem,
                 ItemID.SummonerEmblem,
-                //ModContent.ItemType<NullEmblem>(),
+                ModContent.ItemType<NullEmblem>(),
                 ModContent.ItemType<MysticEmblem>(),
                 ModContent.ItemType<NinjaEmblem>()
             }));
@@ -333,6 +333,13 @@ namespace Laugicality.Utilities
             _LihzahrdPowerCell.AddIngredient(ModContent.ItemType<EtherialEssence>(), 5);
             _LihzahrdPowerCell.AddTile(TileID.DemonAltar);
             _LihzahrdPowerCell.Register();
+
+            Recipe _MusicBox = Recipe.Create(ItemID.MusicBox);
+            _MusicBox.AddTile(ModContent.TileType<LaugicalWorkbench>());
+            _MusicBox.AddRecipeGroup(RecipeGroupID.IronBar, 4);
+            _MusicBox.AddRecipeGroup(RecipeGroupID.Wood, 20);
+            _MusicBox.AddIngredient(ModContent.ItemType<ArcaneShard>(), 5);
+            _MusicBox.Register();
         }
         #endregion
     }

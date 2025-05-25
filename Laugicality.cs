@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria.Audio;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria;
@@ -13,13 +7,12 @@ using System.IO;
 using WebmilioCommonsAddon.Networking;
 using Laugicality.Utilities.UI;
 using Laugicality.Utilities.Etherial;
+using Laugicality.Content.Items.Placeable.MusicBoxes;
 
 namespace Laugicality
 {
 	public class Laugicality : Mod
 	{
-        public static Mod Calamity;
-
         internal static ModKeybind toggleMystic, toggleSoulStoneV, toggleSoulStoneM, quickMystica, soulStoneAbility, restockNearby;
 
         public static int zaWarudo = 0;
@@ -42,20 +35,19 @@ namespace Laugicality
                 SkyManager.Instance["Laugicality:ZaWarudo"] = new ZaWarudoVisual();
 
                 // Register a new music box
-                /*AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/DuneSharkron"), ModContent.ItemType<DuneSharkronMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.DuneSharkronMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Hypothema"), ModContent.ItemType<HypothemaMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.HypothemaMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Obsidium"), ModContent.ItemType<ObsidiumMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.ObsidiumMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Ragnar"), ModContent.ItemType<RagnarMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.RagnarMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/RockPhase3"), ModContent.ItemType<DioritusMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.DioritusMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/AnDio"), ModContent.ItemType<AnDioMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.AnDioMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Annihilator"), ModContent.ItemType<AnnihilatorMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.AnnihilatorMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Slybertron"), ModContent.ItemType<SlybertronMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.SlybertronMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/SteamTrain"), ModContent.ItemType<SteamTrainMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.SteamTrainMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Etheria"), ModContent.ItemType<EtheriaMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.EtheriaMusicBox>());
-                AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ObsidiumSurface"), ModContent.ItemType<GreatShadowMusicBox>(), ModContent.TileType<Tiles.MusicBoxes.GreatShadowMusicBox>());*/
-                //AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Obsidium"), ModContent.ItemType<AmelderaMusicBoxItem>(), ModContent.TileType<Tiles.MusicBoxes.AmelderaMusicBox>());
-                //AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/ObsidiumSurface"), ModContent.ItemType<AmelderaSurfaceMusicBoxItem>(), ModContent.TileType<Tiles.MusicBoxes.AmelderaSurfaceMusicBox>());
-
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/DuneSharkron"), ModContent.ItemType<DuneSharkronMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.DuneSharkronMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Obsidium"), ModContent.ItemType<AmelderaMusicBoxItem>(), ModContent.TileType<Content.Tiles.MusicBoxes.AmelderaMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/ObsidiumSurface"), ModContent.ItemType<AmelderaSurfaceMusicBoxItem>(), ModContent.TileType<Content.Tiles.MusicBoxes.AmelderaSurfaceMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/AnDio"), ModContent.ItemType<AnDioMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.AnDioMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Annihilator"), ModContent.ItemType<AnnihilatorMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.AnnihilatorMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/RockPhase3"), ModContent.ItemType<DioritusMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.DioritusMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/ObsidiumSurfaceClon"), ModContent.ItemType<GreatShadowMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.GreatShadowMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Etheria"), ModContent.ItemType<EtheriaMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.EtheriaMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Hypothema"), ModContent.ItemType<HypothemaMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.HypothemaMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/ObsidiumClone"), ModContent.ItemType<ObsidiumMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.ObsidiumMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Ragnar"), ModContent.ItemType<RagnarMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.RagnarMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/Slybertron"), ModContent.ItemType<SlybertronMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.SlybertronMusicBox>(), 0);
+                MusicLoader.AddMusicBox(this, MusicLoader.GetMusicSlot("Laugicality/Sounds/Music/SteamTrain"), ModContent.ItemType<SteamTrainMusicBox>(), ModContent.TileType<Content.Tiles.MusicBoxes.SteamTrainMusicBox>(), 0);
 
                 MysticaUI = new LaugicalityUI();
                 MysticaUI.Activate();
@@ -73,14 +65,11 @@ namespace Laugicality
         }
         public override void Unload()
         {
-            Calamity = null;
-
             Instance = null;
 
             MysticaUI.Unload();
             MysticaUserInterface = null;
         }
-
         public override void HandlePacket(BinaryReader reader, int whoAmI)
         {
             NetworkPacketLoader.Instance.HandlePacket(reader, whoAmI);
@@ -90,15 +79,11 @@ namespace Laugicality
         {
             ZaWarudoTime,
         }
-
         public override void Close()
         {
             base.Close();
         }
-
-
         public static Laugicality Instance { get; private set; }
-
         public UserInterface MysticaUserInterface { get; private set; }
         public LaugicalityUI MysticaUI { get; private set; }
     }

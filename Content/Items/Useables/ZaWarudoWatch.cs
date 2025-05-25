@@ -2,6 +2,7 @@ using Laugicality.Content.Buffs;
 using Laugicality.Content.NPCs;
 using Terraria;
 using Terraria.ID;
+using Laugicality.Utilities.Globals;
 using Terraria.ModLoader;
 using Laugicality.Utilities.Base;
 using Laugicality.Utilities.Players;
@@ -42,7 +43,7 @@ namespace Laugicality.Content.Items.Useables
             if(Laugicality.zaWarudo < modPlayer.zaWarudoDuration)
             {
                 Laugicality.zaWarudo = modPlayer.zaWarudoDuration;
-                //LaugicalGlobalNPCs.zTime = modPlayer.zaWarudoDuration;
+                LaugicalGlobalNPCs.zTime = modPlayer.zaWarudoDuration;
             }
             foreach ( Player player2 in Main.player){
                 
